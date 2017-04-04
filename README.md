@@ -1,4 +1,4 @@
-# Breakfast Cereal Showdown
+# City Rater
 
 ## Key Topics for the Week
 The key things to make sure you have a good understanding of are as follows:
