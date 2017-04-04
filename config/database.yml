@@ -1,14 +1,14 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: breakfast-cereal-battle_development
+  database: city-rater_development
   pool: 5
   username:
   password:
 test:
   adapter: postgresql
   encoding: unicode
-  database: breakfast-cereal-battle_test
+  database: city-rater_test
   pool: 5
   username:
   password:
