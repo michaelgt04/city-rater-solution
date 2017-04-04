@@ -3,7 +3,7 @@ development:
   encoding: unicode
   database: city-rater_development
   pool: 5
-  username:
+  username: 
   password:
 test:
   adapter: postgresql
