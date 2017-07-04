@@ -1,22 +1,27 @@
-# City Rater
+# City Rater Solution
 
-## Key Topics for the Week
-The key things to make sure you have a good understanding of are as follows:
-* ActiveRecord Basics
-  * Migrations
-  * Schema
-* ActiveRecord in Pry/Irb
-  * Adding records to your database from pry/irb
-  * Debugging in pry/irb
+## Information
 
-## Create a City Model
-This model should have a column for name, state, description and rating, as well as timestamps for the record.
+This is the solution code for the city-rater ActiveRecord fundamentals clinic I gave this week.
+Make sure that you go through and are able to do each of the things outlined in the Readme for
+the starter code.
 
-## Create Some Sample Cities
-Use Pry to create 5 cities for the database. Once you've done that, create a seed file that could be used to do the same thing for any future users of the app.
+## Common Mistakes/Gotchas
 
-## Create an Index ERB template to Display the Information
-Now, create ERB templates that display the cities on an index page for the viewer to see.
+* Migration
+	
+	Make sure that all of your syntax is right and each of the columns has the correct data types.
+	Without this code being setup the right way, it will be impossible to get the rest working.
 
-## Create a Show ERB template to Display Information
-Make the links on the index ERB page links to the show page for each city. Remember, you'll need to create a dynamic route for the show page in the server to be able to make this happen. Display the city name, state, description and rating on this page. Be sure to create a link back home as well so that you can get back to the index
+* Pry
+
+	When adding in the sample cities to your database, don't forget to require the Sinatra
+	`server.rb` file. Otherwise, you won't have access to your models from within the pry session.
+	Soon, you'll have something called the Rails Console, that will load up all your web
+	application's code for you!
+
+* Dynamic Routes
+	
+	Don't forget that you'll have access to `params` when trying to create the show page's ERB 
+	template. Use the correct ActiveRecord method to take advantge of this information from 
+	`params`.
